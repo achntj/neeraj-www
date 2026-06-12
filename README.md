@@ -36,6 +36,16 @@ Write the article here.
 
 The filename becomes the URL slug, for example `my-article.md` becomes `/blog/my-article`.
 
+The site publishes an RSS feed at `/rss.xml`. On pushes to `main`, the
+`Publish newsletter` GitHub Action sends each newly added Markdown post to
+Buttondown. Configure these repository settings before enabling it:
+
+- Secret `BUTTONDOWN_API_KEY`: create this in Buttondown's API settings.
+- Variable `SITE_URL`: the production origin, such as `https://example.com`.
+
+Editing an existing post does not resend it. Buttondown email slugs match blog
+slugs, which prevents a rerun from sending the same post twice.
+
 ## Free hosting
 
 1. Push this folder to a GitHub repository.
