@@ -7,8 +7,6 @@ category: Sports Education
 ---
 Despite being a nation of over 1.4 billion people, India often falls short in international sports competitions. This disparity is not merely a consequence of population but a reflection of the country's sports investment. A comparison of sports budgets between the United States, China, and India highlights significant differences, underscoring India's need to rethink its sports approach.
 
-
-
 ![](/images/blog/deccanherald_2024-08-10_ovxese35_india-s-vinesh-phogat-celebrates-after-winning-her-women-s-freestyle-50kg-semi-final-wrestling-match.jpeg)
 
 ## The Budget Disparity
@@ -81,9 +79,3 @@ It is time for India to recognize the potential of its population and provide th
 India has the talent and the passion for sports. With the right investments and policies, we can achieve remarkable success and bring home more yellow metals.
 
 **Let's make sports a priority and build a brighter, healthier, and more competitive future for Indian sports.**
-
-![]()
-
-![]()
-
-![]()
