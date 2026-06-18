@@ -54,7 +54,7 @@ export default function Home() {
 
         <div className="hero-visual">
           <Image
-            src="/images/gallery/personal/IMG_5259.jpg"
+            src="/images/hero.jpeg"
             alt="Neeraj Jha"
             fill
             priority
@@ -88,6 +88,23 @@ export default function Home() {
             <span className="card-arrow">↗</span>
           </a>
         ))}
+      </section>
+
+      <section className="video-cv-band">
+        <div className="section-shell video-cv">
+          <div>
+            <p className="eyebrow red">CAREER FILM</p>
+            <h2>Work across the years.</h2>
+          </div>
+          <div className="video-cv-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/8ylaUn4rctI?rel=0&modestbranding=1&playsinline=1&controls=0"
+              title="Neeraj Jha career film"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </section>
 
       <section className="photo-tease">

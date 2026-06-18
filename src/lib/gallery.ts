@@ -78,7 +78,10 @@ export function getGalleryImages(): GalleryImage[] {
       .map((entry) => ({ category: directory.name, filename: entry.name })))
     .sort((a, b) => stableScore(`${a.category}/${a.filename}`) - stableScore(`${b.category}/${b.filename}`));
 
-  const columns = Math.max(4, Math.ceil(Math.sqrt(files.length * 1.45)));
+  const columns = Math.max(5, Math.ceil(Math.sqrt(files.length * 1.65)));
+  const rows = Math.ceil(files.length / columns);
+  const centerColumn = (columns - 1) / 2;
+  const centerRow = (rows - 1) / 2;
 
   return files.map((file, index) => {
     const imagePath = path.join(galleryRoot, file.category, file.filename);
@@ -87,7 +90,9 @@ export function getGalleryImages(): GalleryImage[] {
     const height = dimensions.height || 900;
     const column = index % columns;
     const row = Math.floor(index / columns);
-    const displayWidth = 205 + ((index * 37) % 100);
+    const displayWidth = 220 + ((index * 37) % 115);
+    const pullX = (column - centerColumn) * 18;
+    const pullY = (row - centerRow) * 16;
 
     return {
       id: index + 1,
@@ -97,8 +102,8 @@ export function getGalleryImages(): GalleryImage[] {
       width,
       height,
       displayWidth,
-      x: 120 + column * 245 + ((row * 43 + column * 19) % 55),
-      y: 110 + row * 275 + ((column * 31 + row * 23) % 75),
+      x: 130 + column * 182 + ((row * 43 + column * 19) % 70) - pullX,
+      y: 115 + row * 205 + ((column * 31 + row * 23) % 82) - pullY,
       rotation: ((index * 17) % 13) - 6,
     };
   });

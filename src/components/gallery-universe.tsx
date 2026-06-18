@@ -114,7 +114,7 @@ export function GalleryUniverse({ images, categories }: { images: GalleryImage[]
         </div>
       </div>
 
-      <div className="gallery-title"><p>NEERAJ JHA</p><h1>THE PHOTO<br />ARCHIVE</h1><span>Drag to explore · Scroll to zoom</span></div>
+      <div className="gallery-title"><p>NEERAJ JHA</p><h1>THE PHOTO<br />ARCHIVE</h1><span>PERSONAL / MEMORABILIA</span></div>
       <div className="tag-filter"><button className="random" onClick={randomFocus}>RANDOM ↗</button>{categories.map((item) => <button className={category === item ? "active" : ""} onClick={() => setCategory(item)} key={item}>{item}</button>)}</div>
       <div className="gallery-counter">{String(visible.length).padStart(2, "0")} / {String(images.length).padStart(2, "0")} PHOTOGRAPHS</div>
 
